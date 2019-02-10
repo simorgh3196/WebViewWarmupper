@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26026808220FF52E00645086 /* WebViewWarmuper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260267FE220FF52E00645086 /* WebViewWarmuper.framework */; };
-		2602680D220FF52E00645086 /* WebViewWarmuperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602680C220FF52E00645086 /* WebViewWarmuperTests.swift */; };
-		2602680F220FF52E00645086 /* WebViewWarmuper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26026801220FF52E00645086 /* WebViewWarmuper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26026819220FF5D100645086 /* ViewWarmuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26026818220FF5D100645086 /* ViewWarmuper.swift */; };
-		2602681B220FF62700645086 /* WebViewWarmuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602681A220FF62700645086 /* WebViewWarmuper.swift */; };
+		26026808220FF52E00645086 /* WebViewWarmupper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260267FE220FF52E00645086 /* WebViewWarmupper.framework */; };
+		2602680D220FF52E00645086 /* WebViewWarmupperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602680C220FF52E00645086 /* WebViewWarmupperTests.swift */; };
+		2602680F220FF52E00645086 /* WebViewWarmupper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26026801220FF52E00645086 /* WebViewWarmupper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26026819220FF5D100645086 /* ViewWarmupper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26026818220FF5D100645086 /* ViewWarmupper.swift */; };
+		2602681B220FF62700645086 /* WebViewWarmupper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602681A220FF62700645086 /* WebViewWarmupper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		260267FE220FF52E00645086 /* WebViewWarmuper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebViewWarmuper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26026801220FF52E00645086 /* WebViewWarmuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewWarmuper.h; sourceTree = "<group>"; };
+		260267FE220FF52E00645086 /* WebViewWarmupper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebViewWarmupper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26026801220FF52E00645086 /* WebViewWarmupper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewWarmupper.h; sourceTree = "<group>"; };
 		26026802220FF52E00645086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26026807220FF52E00645086 /* WebViewWarmuperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewWarmuperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2602680C220FF52E00645086 /* WebViewWarmuperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWarmuperTests.swift; sourceTree = "<group>"; };
+		26026807220FF52E00645086 /* WebViewWarmupperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewWarmupperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2602680C220FF52E00645086 /* WebViewWarmupperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWarmupperTests.swift; sourceTree = "<group>"; };
 		2602680E220FF52E00645086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26026818220FF5D100645086 /* ViewWarmuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWarmuper.swift; sourceTree = "<group>"; };
-		2602681A220FF62700645086 /* WebViewWarmuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWarmuper.swift; sourceTree = "<group>"; };
+		26026818220FF5D100645086 /* ViewWarmupper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWarmupper.swift; sourceTree = "<group>"; };
+		2602681A220FF62700645086 /* WebViewWarmupper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWarmupper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26026808220FF52E00645086 /* WebViewWarmuper.framework in Frameworks */,
+				26026808220FF52E00645086 /* WebViewWarmupper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,8 +66,8 @@
 		260267FF220FF52E00645086 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				260267FE220FF52E00645086 /* WebViewWarmuper.framework */,
-				26026807220FF52E00645086 /* WebViewWarmuperTests.xctest */,
+				260267FE220FF52E00645086 /* WebViewWarmupper.framework */,
+				26026807220FF52E00645086 /* WebViewWarmupperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,10 +75,10 @@
 		26026800220FF52E00645086 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				26026801220FF52E00645086 /* WebViewWarmuper.h */,
+				26026801220FF52E00645086 /* WebViewWarmupper.h */,
 				26026802220FF52E00645086 /* Info.plist */,
-				26026818220FF5D100645086 /* ViewWarmuper.swift */,
-				2602681A220FF62700645086 /* WebViewWarmuper.swift */,
+				26026818220FF5D100645086 /* ViewWarmupper.swift */,
+				2602681A220FF62700645086 /* WebViewWarmupper.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 		2602680B220FF52E00645086 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2602680C220FF52E00645086 /* WebViewWarmuperTests.swift */,
+				2602680C220FF52E00645086 /* WebViewWarmupperTests.swift */,
 				2602680E220FF52E00645086 /* Info.plist */,
 			);
 			path = UnitTests;
@@ -99,16 +99,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2602680F220FF52E00645086 /* WebViewWarmuper.h in Headers */,
+				2602680F220FF52E00645086 /* WebViewWarmupper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		260267FD220FF52E00645086 /* WebViewWarmuper */ = {
+		260267FD220FF52E00645086 /* WebViewWarmupper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26026812220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmuper" */;
+			buildConfigurationList = 26026812220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmupper" */;
 			buildPhases = (
 				260267F9220FF52E00645086 /* Headers */,
 				260267FA220FF52E00645086 /* Sources */,
@@ -119,14 +119,14 @@
 			);
 			dependencies = (
 			);
-			name = WebViewWarmuper;
+			name = WebViewWarmupper;
 			productName = WebViewWarmuper;
-			productReference = 260267FE220FF52E00645086 /* WebViewWarmuper.framework */;
+			productReference = 260267FE220FF52E00645086 /* WebViewWarmupper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		26026806220FF52E00645086 /* WebViewWarmuperTests */ = {
+		26026806220FF52E00645086 /* WebViewWarmupperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26026815220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmuperTests" */;
+			buildConfigurationList = 26026815220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmupperTests" */;
 			buildPhases = (
 				26026803220FF52E00645086 /* Sources */,
 				26026804220FF52E00645086 /* Frameworks */,
@@ -137,9 +137,9 @@
 			dependencies = (
 				2602680A220FF52E00645086 /* PBXTargetDependency */,
 			);
-			name = WebViewWarmuperTests;
+			name = WebViewWarmupperTests;
 			productName = WebViewWarmuperTests;
-			productReference = 26026807220FF52E00645086 /* WebViewWarmuperTests.xctest */;
+			productReference = 26026807220FF52E00645086 /* WebViewWarmupperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 260267F8220FF52E00645086 /* Build configuration list for PBXProject "WebViewWarmuper" */;
+			buildConfigurationList = 260267F8220FF52E00645086 /* Build configuration list for PBXProject "WebViewWarmupper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,8 +173,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				260267FD220FF52E00645086 /* WebViewWarmuper */,
-				26026806220FF52E00645086 /* WebViewWarmuperTests */,
+				260267FD220FF52E00645086 /* WebViewWarmupper */,
+				26026806220FF52E00645086 /* WebViewWarmupperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,8 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2602681B220FF62700645086 /* WebViewWarmuper.swift in Sources */,
-				26026819220FF5D100645086 /* ViewWarmuper.swift in Sources */,
+				2602681B220FF62700645086 /* WebViewWarmupper.swift in Sources */,
+				26026819220FF5D100645086 /* ViewWarmupper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2602680D220FF52E00645086 /* WebViewWarmuperTests.swift in Sources */,
+				2602680D220FF52E00645086 /* WebViewWarmupperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +219,7 @@
 /* Begin PBXTargetDependency section */
 		2602680A220FF52E00645086 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 260267FD220FF52E00645086 /* WebViewWarmuper */;
+			target = 260267FD220FF52E00645086 /* WebViewWarmupper */;
 			targetProxy = 26026809220FF52E00645086 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,7 +439,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		260267F8220FF52E00645086 /* Build configuration list for PBXProject "WebViewWarmuper" */ = {
+		260267F8220FF52E00645086 /* Build configuration list for PBXProject "WebViewWarmupper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26026810220FF52E00645086 /* Debug */,
@@ -448,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26026812220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmuper" */ = {
+		26026812220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmupper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26026813220FF52E00645086 /* Debug */,
@@ -457,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26026815220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmuperTests" */ = {
+		26026815220FF52E00645086 /* Build configuration list for PBXNativeTarget "WebViewWarmupperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26026816220FF52E00645086 /* Debug */,

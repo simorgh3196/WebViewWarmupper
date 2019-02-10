@@ -8,18 +8,18 @@
 
 import UIKit
 import WebKit
-import WebViewWarmuper
+import WebViewWarmupper
 
 class WarmupedWKWebViewController: UIViewController {
 
     private static var loadTimeHistory = [TimeInterval]()
 
-    private let warmuper: WebViewWarmuper
+    private let warmupper: WebViewWarmupper
 
     private var loadStartTime: Date!
 
-    init(warmuper: WebViewWarmuper) {
-        self.warmuper = warmuper
+    init(warmupper: WebViewWarmupper) {
+        self.warmupper = warmupper
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -28,7 +28,7 @@ class WarmupedWKWebViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        guard let webView = warmuper.getView() else {
+        guard let webView = warmupper.getView() else {
             print("warmuped views empty")
             return
         }
@@ -53,7 +53,7 @@ class WarmupedWKWebViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
-        warmuper.warmupUpToSize()
+        warmupper.warmupUpToSize()
     }
 }
 

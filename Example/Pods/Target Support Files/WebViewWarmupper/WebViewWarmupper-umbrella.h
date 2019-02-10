@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double WebViewWarmuperVersionNumber;
-FOUNDATION_EXPORT const unsigned char WebViewWarmuperVersionString[];
+FOUNDATION_EXPORT double WebViewWarmupperVersionNumber;
+FOUNDATION_EXPORT const unsigned char WebViewWarmupperVersionString[];
 

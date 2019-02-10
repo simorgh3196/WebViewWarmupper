@@ -8,11 +8,11 @@
 
 import UIKit
 import WebKit
-import WebViewWarmuper
+import WebViewWarmupper
 
 class RootViewController: UIViewController {
 
-    let warmuper = WebViewWarmuper(maxSize: 2)
+    let warmupper = WebViewWarmupper(maxSize: 2)
     let sharedWKWebView = WKWebView()
 
     lazy var showWarmupedWKWebViewButton: UIButton = {
@@ -80,7 +80,7 @@ class RootViewController: UIViewController {
     }
 
     @objc private func didTapShowWarmupedWKWebViewButton() {
-        let viewController = WarmupedWKWebViewController(warmuper: warmuper)
+        let viewController = WarmupedWKWebViewController(warmupper: warmupper)
         navigationController?.pushViewController(viewController, animated: true)
     }
 

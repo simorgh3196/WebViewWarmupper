@@ -1,12 +1,12 @@
 //
-//  ViewWarmuper.swift
-//  WebViewWarmuper
+//  ViewWarmupper.swift
+//  WebViewWarmupper
 //
 //  Created by Tomoya Hayakawa on 2019/02/10.
 //  Copyright © 2019年 simorgh3196. All rights reserved.
 //
 
-open class ViewWarmuper<View: UIView> {
+open class ViewWarmupper<View: UIView> {
 
     public typealias ViewFactory = () -> View
 
