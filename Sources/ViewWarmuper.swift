@@ -6,7 +6,7 @@
 //  Copyright © 2019年 simorgh3196. All rights reserved.
 //
 
-class ViewWarmuper<View: UIView> {
+open class ViewWarmuper<View: UIView> {
 
     typealias ViewFactory = () -> View
 
