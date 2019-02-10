@@ -51,8 +51,7 @@ open class ViewWarmupper<View: UIView> {
     }
 
     public func getView() -> View? {
-        guard let view = queuedViews.first else { return nil }
-        queuedViews = Array(queuedViews.dropFirst())
-        return view
+        guard !queuedViews.isEmpty else { return nil }
+        return queuedViews.removeFirst()
     }
 }
