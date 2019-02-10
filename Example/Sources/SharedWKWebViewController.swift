@@ -11,6 +11,8 @@ import WebKit
 
 class SharedWKWebViewController: UIViewController {
 
+    private static var loadTimeHistory = [TimeInterval]()
+
     private let webView: WKWebView
 
     private var loadStartTime: Date!
@@ -59,6 +61,9 @@ extension SharedWKWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         let time = -loadStartTime.timeIntervalSinceNow
-        print("Shared WKWebView - Loading Time: \(time)")
+        SharedWKWebViewController.loadTimeHistory.append(time)
+        let historyCount = SharedWKWebViewController.loadTimeHistory.count
+        let average = SharedWKWebViewController.loadTimeHistory.reduce(0, +) / Double(SharedWKWebViewController.loadTimeHistory.count)
+        print("Shared WKWebView - Loading Time: \(time), Average[\(historyCount)]: \(average)")
     }
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class SimpleUIWebViewController: UIViewController {
 
+    private static var loadTimeHistory = [TimeInterval]()
+
     private var loadStartTime: Date!
 
     override func viewDidLoad() {
@@ -37,6 +39,9 @@ extension SimpleUIWebViewController: UIWebViewDelegate {
 
     func webViewDidFinishLoad(_ webView: UIWebView) {
         let time = -loadStartTime.timeIntervalSinceNow
-        print("Simple UIWebView - Loading Time: \(time)")
+        SimpleUIWebViewController.loadTimeHistory.append(time)
+        let historyCount = SimpleUIWebViewController.loadTimeHistory.count
+        let average = SimpleUIWebViewController.loadTimeHistory.reduce(0, +) / Double(SimpleUIWebViewController.loadTimeHistory.count)
+        print("Simple UIWebView - Loading Time: \(time), Average[\(historyCount)]: \(average)")
     }
 }

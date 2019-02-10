@@ -12,6 +12,8 @@ import WebViewWarmuper
 
 class WarmupedWKWebViewController: UIViewController {
 
+    private static var loadTimeHistory = [TimeInterval]()
+
     private let warmuper: WebViewWarmuper
 
     private var loadStartTime: Date!
@@ -47,12 +49,21 @@ class WarmupedWKWebViewController: UIViewController {
         loadStartTime = Date()
         webView.load(request)
     }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        warmuper.warmupUpToSize()
+    }
 }
 
 extension WarmupedWKWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         let time = -loadStartTime.timeIntervalSinceNow
-        print("Warmuped WKWebView - Loading Time: \(time)")
+        WarmupedWKWebViewController.loadTimeHistory.append(time)
+        let historyCount = WarmupedWKWebViewController.loadTimeHistory.count
+        let average = WarmupedWKWebViewController.loadTimeHistory.reduce(0, +) / Double(WarmupedWKWebViewController.loadTimeHistory.count)
+        print("Warmuped WKWebView - Loading Time: \(time), Average[\(historyCount)]: \(average)")
     }
 }

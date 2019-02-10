@@ -57,12 +57,6 @@ class RootViewController: UIViewController {
         _ = sharedWKWebView
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        warmuper.warmupUpToSize()
-    }
-
     private func setupLayout() {
         let stackView = UIStackView(arrangedSubviews: [
             showWarmupedWKWebViewButton,
