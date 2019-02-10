@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		26026838221020C800645086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26026837221020C800645086 /* AppDelegate.swift */; };
-		2602683A221020C800645086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26026839221020C800645086 /* ViewController.swift */; };
-		2602683D221020C800645086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2602683B221020C800645086 /* Main.storyboard */; };
 		2602683F221020CA00645086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2602683E221020CA00645086 /* Assets.xcassets */; };
 		26026842221020CA00645086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26026840221020CA00645086 /* LaunchScreen.storyboard */; };
+		2602684C2210239D00645086 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602684B2210239D00645086 /* RootViewController.swift */; };
+		2602684E22102D1900645086 /* WarmupedWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602684D22102D1900645086 /* WarmupedWKWebViewController.swift */; };
+		2602685022102D3D00645086 /* SharedWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602684F22102D3D00645086 /* SharedWKWebViewController.swift */; };
+		2602685222102D5E00645086 /* SimpleUIWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2602685122102D5E00645086 /* SimpleUIWebViewController.swift */; };
+		26026854221036CA00645086 /* SimpleWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26026853221036CA00645086 /* SimpleWKWebViewController.swift */; };
+		260268562210394400645086 /* Sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 260268552210394400645086 /* Sample.html */; };
 		D245AAF5AB744A6B4B59F459 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0EF4E9AC80E15E497C4B1F /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +23,15 @@
 		0C0EF4E9AC80E15E497C4B1F /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26026834221020C800645086 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26026837221020C800645086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26026839221020C800645086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2602683C221020C800645086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2602683E221020CA00645086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26026841221020CA00645086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26026843221020CA00645086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2602684B2210239D00645086 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2602684D22102D1900645086 /* WarmupedWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupedWKWebViewController.swift; sourceTree = "<group>"; };
+		2602684F22102D3D00645086 /* SharedWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedWKWebViewController.swift; sourceTree = "<group>"; };
+		2602685122102D5E00645086 /* SimpleUIWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIWebViewController.swift; sourceTree = "<group>"; };
+		26026853221036CA00645086 /* SimpleWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWKWebViewController.swift; sourceTree = "<group>"; };
+		260268552210394400645086 /* Sample.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Sample.html; sourceTree = "<group>"; };
 		4B621038C03944886EB1F02E /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4CAF9F5A59A9A2A50F7CC14A /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				26026837221020C800645086 /* AppDelegate.swift */,
-				26026839221020C800645086 /* ViewController.swift */,
-				2602683B221020C800645086 /* Main.storyboard */,
+				2602684B2210239D00645086 /* RootViewController.swift */,
+				2602684D22102D1900645086 /* WarmupedWKWebViewController.swift */,
+				2602684F22102D3D00645086 /* SharedWKWebViewController.swift */,
+				26026853221036CA00645086 /* SimpleWKWebViewController.swift */,
+				2602685122102D5E00645086 /* SimpleUIWebViewController.swift */,
+				260268552210394400645086 /* Sample.html */,
 				2602683E221020CA00645086 /* Assets.xcassets */,
 				26026840221020CA00645086 /* LaunchScreen.storyboard */,
 				26026843221020CA00645086 /* Info.plist */,
@@ -150,7 +162,7 @@
 			files = (
 				26026842221020CA00645086 /* LaunchScreen.storyboard in Resources */,
 				2602683F221020CA00645086 /* Assets.xcassets in Resources */,
-				2602683D221020C800645086 /* Main.storyboard in Resources */,
+				260268562210394400645086 /* Sample.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,22 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2602683A221020C800645086 /* ViewController.swift in Sources */,
+				2602685022102D3D00645086 /* SharedWKWebViewController.swift in Sources */,
+				2602684E22102D1900645086 /* WarmupedWKWebViewController.swift in Sources */,
+				2602684C2210239D00645086 /* RootViewController.swift in Sources */,
+				2602685222102D5E00645086 /* SimpleUIWebViewController.swift in Sources */,
 				26026838221020C800645086 /* AppDelegate.swift in Sources */,
+				26026854221036CA00645086 /* SimpleWKWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2602683B221020C800645086 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2602683C221020C800645086 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26026840221020CA00645086 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
