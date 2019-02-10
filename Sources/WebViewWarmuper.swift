@@ -10,7 +10,7 @@ import WebKit
 
 open class WebViewWarmuper: ViewWarmuper<WKWebView> {
 
-    init(maxSize: UInt) {
+    public init(maxSize: UInt) {
         super.init(maxSize: maxSize) {
             return WKWebView()
         }

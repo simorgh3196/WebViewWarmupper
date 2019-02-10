@@ -8,24 +8,25 @@
 
 open class ViewWarmuper<View: UIView> {
 
-    typealias ViewFactory = () -> View
+    public typealias ViewFactory = () -> View
 
     private var queuedViews: [View]
-    let warmupQueue = DispatchQueue(label: "ViewWarmuper." + UUID().uuidString, qos: .background)
-    let maxSize: UInt
-    let viewFactory: ViewFactory
+    private let warmupQueue = DispatchQueue(label: "ViewWarmuper." + UUID().uuidString, qos: .background)
 
-    var currentSize: UInt {
+    public let maxSize: UInt
+    public let viewFactory: ViewFactory
+
+    public var currentSize: UInt {
         return UInt(queuedViews.count)
     }
 
-    init(maxSize: UInt, viewFactory: @escaping ViewFactory) {
+    public init(maxSize: UInt, viewFactory: @escaping ViewFactory) {
         queuedViews = []
         self.maxSize = maxSize
         self.viewFactory = viewFactory
     }
 
-    func warmup(_ count: UInt, completion: (() -> Void)? = nil) {
+    public func warmup(_ count: UInt, completion: (() -> Void)? = nil) {
         warmupQueue.async {
             for _ in 0 ..< count {
                 guard self.currentSize < self.maxSize else {
@@ -42,14 +43,14 @@ open class ViewWarmuper<View: UIView> {
         }
     }
 
-    func warmupUpToSize(completion: (() -> Void)? = nil) {
+    public func warmupUpToSize(completion: (() -> Void)? = nil) {
         warmupQueue.async {
             let count = self.maxSize - self.currentSize
             self.warmup(count, completion: completion)
         }
     }
 
-    func getView() -> View? {
+    public func getView() -> View? {
         guard let view = queuedViews.first else { return nil }
         queuedViews = Array(queuedViews.dropFirst())
         return view
