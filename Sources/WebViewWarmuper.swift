@@ -8,7 +8,7 @@
 
 import WebKit
 
-open class WebViewWarmuper: ViewWarmuper<WKWebView> {
+public class WebViewWarmuper: ViewWarmuper<WKWebView> {
 
     public init(maxSize: UInt) {
         super.init(maxSize: maxSize) {
