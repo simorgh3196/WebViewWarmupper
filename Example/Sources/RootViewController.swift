@@ -70,6 +70,7 @@ class RootViewController: UIViewController {
             showSimpleWKWebViewButton,
             showSimpleUIWebViewButton
             ])
+        stackView.spacing = 12
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.distribution = .equalSpacing
@@ -77,7 +78,7 @@ class RootViewController: UIViewController {
         view.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
             stackView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             stackView.bottomAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor),
             stackView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor)
