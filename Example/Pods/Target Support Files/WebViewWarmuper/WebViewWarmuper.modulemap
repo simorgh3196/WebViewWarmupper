@@ -1,0 +1,6 @@
+framework module WebViewWarmuper {
+  umbrella header "WebViewWarmuper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - WebViewWarmuper (1.0.0)
+
+DEPENDENCIES:
+  - WebViewWarmuper (from `../WebViewWarmuper.podspec`)
+
+EXTERNAL SOURCES:
+  WebViewWarmuper:
+    :path: "../WebViewWarmuper.podspec"
+
+SPEC CHECKSUMS:
+  WebViewWarmuper: e4f80bdcb5b7bc59b920f9b76e6f74a33e93c62c
+
+PODFILE CHECKSUM: 4875b580a01f2ec9aa546e399b094cf3983f3365
+
+COCOAPODS: 1.5.2

@@ -1,0 +1,25 @@
+{
+  "name": "WebViewWarmuper",
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "homepage": "https://github.com/simorgh3196/WebViewWarmuper",
+  "authors": {
+    "Tomoya Hayakawa": "simorgh3196@gmail.com"
+  },
+  "summary": "Warmup WKWebViewInstance",
+  "source": {
+    "git": "https://github.com/simorgh3196/WebViewWarmuper",
+    "tag": "v1.0.0"
+  },
+  "swift_version": "4.2",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Sources/**/*.swift",
+  "ios": {
+    "frameworks": "WebKit"
+  }
+}

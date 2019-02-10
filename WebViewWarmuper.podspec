@@ -8,8 +8,7 @@ Pod::Spec.new do |spec|
   spec.source        = { :git => 'https://github.com/simorgh3196/WebViewWarmuper', :tag => 'v1.0.0' }
   spec.swift_version = '4.2'
 
-  spec.ios.deployment_target  = '9.0'
-  spec.osx.deployment_target  = '10.10'
+  spec.ios.deployment_target  = '8.0'
 
   spec.source_files  = 'Sources/**/*.swift'
 
