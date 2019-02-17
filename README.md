@@ -9,8 +9,13 @@ Pre initialize when UI Thread not busy make it better.
 
 ## Installation
 
-* Insert `pod 'WebViewWarmupper'` to your Podfile
-* Run `pod install`
+### Cocoapods
+
+`pod 'WebViewWarmupper'`
+
+### Carthage
+
+`github "simorgh3196/WebViewWarmupper"`
 
 ## Usage
 
