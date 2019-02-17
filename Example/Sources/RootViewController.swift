@@ -54,6 +54,7 @@ class RootViewController: UIViewController {
         view.backgroundColor = .white
 
         setupLayout()
+        warmupper.warmupUpToSize()
         _ = sharedWKWebView
     }
 
