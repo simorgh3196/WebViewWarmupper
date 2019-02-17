@@ -17,8 +17,8 @@ class RootViewController: UIViewController {
 
     lazy var showWarmupedWKWebViewButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Show Warmuped WKWebView", for: .normal)
-        button.addTarget(self, action: #selector(didTapShowWarmupedWKWebViewButton), for: .touchUpInside)
+        button.setTitle("Show Warmupped WKWebView", for: .normal)
+        button.addTarget(self, action: #selector(didTapShowWarmuppedWKWebViewButton), for: .touchUpInside)
         return button
     }()
     lazy var showSharedInstanceWKWebViewButton: UIButton = {
@@ -80,7 +80,7 @@ class RootViewController: UIViewController {
             ])
     }
 
-    @objc private func didTapShowWarmupedWKWebViewButton() {
+    @objc private func didTapShowWarmuppedWKWebViewButton() {
         let viewController = WarmupedWKWebViewController(warmupper: warmupper)
         navigationController?.pushViewController(viewController, animated: true)
     }

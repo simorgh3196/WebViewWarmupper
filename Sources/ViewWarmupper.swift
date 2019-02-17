@@ -11,7 +11,7 @@ open class ViewWarmupper<View: UIView> {
     public typealias ViewFactory = () -> View
 
     private var queuedViews: [View]
-    private let warmupQueue = DispatchQueue(label: "ViewWarmuper." + UUID().uuidString, qos: .background)
+    private let warmupQueue = DispatchQueue(label: "ViewWarmupper." + UUID().uuidString, qos: .background)
 
     public let maxSize: UInt
     public let viewFactory: ViewFactory
