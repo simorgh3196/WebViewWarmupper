@@ -1,6 +1,55 @@
-# WebViewWarmuper
+# WebViewWarmupper
 
-Warmup WKWebView instance
+Warmup WKWebView Helper.
+
+## Why
+
+WKWebView inititalize is very slowly.
+Pre initialize when UI Thread not busy make it better.
+
+## Installation
+
+* Insert `pod 'WebViewWarmupper'` to your Podfile
+* Run `pod install`
+
+## Usage
+
+```swift
+let warmupper = WebViewWarmupper(maxSize: 3)
+
+// warmup a WKWebView instance.
+warmupper.warmup()
+
+// warmup some WKWebView instances.
+warmupper.warmup(2)
+
+// warmup WKWebView instance up to max size.
+warmupper.warmupUpToSize()
+
+let webView = warmupper.getView()
+```
+
+### [Advanced] Custom WKWebView initialization
+
+```swift
+class MyWebViewWarmupper: ViewWarmupper<WKWebView> {
+
+    init() {
+        super.init(maxSize: 3) {
+					let script = WKUserScript(
+							source: "#custom_javascript",
+							injectionTime: .atDocumentStart,
+							forMainFrameOnly: false)
+						let contentController = WKUserContentController()
+						contentController.addUserScript(script)
+						let configuration = WKWebViewConfiguration()
+						configuration.userContentController = contentController
+
+						return WKWebView(frame: .zero, configuration: configuration)
+				}
+		}
+}
+```
 
 ## Performance
 
@@ -20,3 +69,4 @@ Check performance for Example project
 | 10  |     | 0.03253495693206787  | 0.026466012001037598 | 0.4506809711456299  | 0.020102977752685547 |
 |     |     |                      |                      |                     |                      |
 | Ave |     | 0.034811973571777344 | 0.03294889926910401  | 0.4551217079162598  | 0.10716239213943482  |
+
