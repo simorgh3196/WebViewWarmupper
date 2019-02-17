@@ -41,18 +41,18 @@ class MyWebViewWarmupper: ViewWarmupper<WKWebView> {
 
     init() {
         super.init(maxSize: 3) {
-					let script = WKUserScript(
-							source: "#custom_javascript",
-							injectionTime: .atDocumentStart,
-							forMainFrameOnly: false)
-						let contentController = WKUserContentController()
-						contentController.addUserScript(script)
-						let configuration = WKWebViewConfiguration()
-						configuration.userContentController = contentController
+            let script = WKUserScript(
+              source: "#custom_javascript",
+              injectionTime: .atDocumentStart,
+              forMainFrameOnly: false)
+            let contentController = WKUserContentController()
+            contentController.addUserScript(script)
+            let configuration = WKWebViewConfiguration()
+            configuration.userContentController = contentController
 
-						return WKWebView(frame: .zero, configuration: configuration)
-				}
-		}
+            return WKWebView(frame: .zero, configuration: configuration)
+        }
+    }
 }
 ```
 
