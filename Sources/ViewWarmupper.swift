@@ -26,7 +26,7 @@ open class ViewWarmupper<View: UIView> {
         self.viewFactory = viewFactory
     }
 
-    public func warmup(_ count: UInt, completion: (() -> Void)? = nil) {
+    open func warmup(_ count: UInt, completion: (() -> Void)? = nil) {
         warmupQueue.async {
             for _ in 0 ..< count {
                 guard self.currentSize < self.maxSize else {
@@ -43,15 +43,15 @@ open class ViewWarmupper<View: UIView> {
         }
     }
 
-    public func warmupUpToSize(completion: (() -> Void)? = nil) {
+    open func warmupUpToSize(completion: (() -> Void)? = nil) {
         warmupQueue.async {
             let count = self.maxSize - self.currentSize
             self.warmup(count, completion: completion)
         }
     }
 
-    public func getView() -> View? {
-        guard !queuedViews.isEmpty else { return nil }
+    open func getView() -> View {
+        guard !queuedViews.isEmpty else { return viewFactory() }
         return queuedViews.removeFirst()
     }
 }
