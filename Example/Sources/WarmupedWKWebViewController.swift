@@ -28,10 +28,7 @@ class WarmupedWKWebViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        guard let webView = warmupper.getView() else {
-            print("warmuped views empty")
-            return
-        }
+        let webView = warmupper.getView()
         webView.navigationDelegate = self
 
         view.addSubview(webView)
